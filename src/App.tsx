@@ -9,7 +9,8 @@ const App  = () => {
   const getWeather = (e: any) => {
       e.preventDefault()
       fetch("")
-      .then(res => console.log(res))
+      .then(res => res.json())
+      .then(data => console.log(data))
   }
 
   return (
