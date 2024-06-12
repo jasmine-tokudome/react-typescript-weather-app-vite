@@ -1,5 +1,5 @@
 type FormProps = {
-    setCity:React.Dispatch<React.SetStateAction<string>>
+    setCity: React.Dispatch<React.SetStateAction<string>>
     getWeather: (e: any) => void
 }
 
