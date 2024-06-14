@@ -1,8 +1,9 @@
-const Results = () => {
+const Results = (props: ResultsProps) => {
     return(
-        <h1>気象データ
-        {2 < 4 && <p>正しいですか？</p>}
-        </h1>
+        <div>
+            {props.results.country && 
+                <div>{props.results.country}</div>}
+        </div>
     )
 }
 
