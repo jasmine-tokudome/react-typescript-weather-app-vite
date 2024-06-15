@@ -22,7 +22,7 @@ const App  = () => {
     icon: ""
   })
 
-  const getWeather = (e: any) => {
+  const getWeather = (e) => {
       e.preventDefault()
       fetch("")
       .then(res => res.json())
@@ -41,7 +41,7 @@ const App  = () => {
     <div>
       <Title/>
       <Form setCity={setCity} getWeather={getWeather}/>
-      <Results/>
+      <Results results={results}/>
     </div>
   )
 }
