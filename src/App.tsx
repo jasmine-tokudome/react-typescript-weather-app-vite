@@ -24,7 +24,7 @@ const App  = () => {
 
   const getWeather = (e) => {
       e.preventDefault()
-      fetch("")
+      fetch(``)
       .then(res => res.json())
       .then(data => {
         setResults({
