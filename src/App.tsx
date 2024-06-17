@@ -38,10 +38,12 @@ const App  = () => {
   }
 
   return (
-    <div>
+    <div className="wrapper">
+      <div className="container">
       <Title/>
       <Form setCity={setCity} getWeather={getWeather}/>
-      <Results results={results}/>
+      <Results results={results}/>  
+      </div>
     </div>
   )
 }
