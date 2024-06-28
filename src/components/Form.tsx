@@ -3,7 +3,8 @@ import { useState } from "react"
 const Form = () => {
     const [city, setCity] = useState("")
 
-    const getWeather = () => {
+    const getWeather = (e) => {
+        e.preventDefault
         fetch("")
         .then(res => console.log(res) )
     }
