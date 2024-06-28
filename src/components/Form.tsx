@@ -6,7 +6,8 @@ const Form = () => {
     const getWeather = (e) => {
         e.preventDefault
         fetch("")
-        .then(res => console.log(res) )
+        .then(res => res.json())
+        .then(data => console.log(data))
     }
 
     return(
