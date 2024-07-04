@@ -19,11 +19,11 @@ const App = () =>{
         fetch("")
         .then(res => res.json())
         .then(data => setResults({
-          conutry: "",
-          cityName: "",
-          tempreture: "",
-          conditionText: "",
-          icon: ""
+          conutry: data.location.country,
+          cityName: data.location.name,
+          tempreture: data.location.temp_c,
+          conditionText: data.current.condition.text,
+          icon: data.current.condition.icon
         }))
     }
 
