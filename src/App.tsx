@@ -31,7 +31,7 @@ const App = () =>{
     <div>
     <Title/>
     <Form/>
-    <Results/>
+    <Results results={results}/>
     </div>
   )
 }
